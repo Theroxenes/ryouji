@@ -1,0 +1,13 @@
+<div class="card-header" style="padding: 2px;">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link<% if(active === 'manage') { %> active<% } %>" href="/manage/<%= guild.id %>/manage">Opções</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link<% if(active === 'stats') { %> active<% } %>" href="/manage/<%= guild.id %>/stats">Estatísticas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link<% if(active === 'members') { %> active<% } %>" href="/manage/<%= guild.id %>/members">Membros</a>
+    </li>
+  </ul>
+</div>

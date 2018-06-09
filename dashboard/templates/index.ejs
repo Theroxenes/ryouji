@@ -1,0 +1,57 @@
+<%- include('blocks/header', {bot: bot, user: user, auth: auth, stats: stats}) %>
+<div class="jumbotron">
+<div class="container">
+  </div>
+    <div class="col-sm-8 mx-auto">
+      <div class="container">
+      <% if (bot.user.avatarURL) { %><div class="col-2"><img style="float:left;padding-right:10px;" class="img-responsive rounded-circle bounce"src='<%= bot.user.avatarURL %>?size=128'></div>
+      <div class="col-8"><% } %>
+      <h1> Dashboard</h1><% if (bot.user.avatarURL) { %></div><% } %>
+        <p> Este é um <a href="https://github.com/NdT3Development/DiscordBot">OpenSource Bot DashBoard</a> feito por <a href="">NdT3Development</a>  para que os moderadores possam configurar os servidores</p>
+      <p>
+        <a class="btn btn-primary" href="/commands" role="button"><i class="fa fa-fw fa-book" aria-hidden="true"></i> Documentação do Bot »</a>
+      </p>
+        </div>
+    </div>
+  </div>
+
+<br>
+
+<div class="jumbotron">
+    <div class="col-sm-8 mx-auto">
+    <h4><i class="fa fa-fw fa-server" aria-hidden="true"></i> Servidores:ㅤㅤ<i class="fa fa-fw fa-clock-o" aria-hidden="true"></i> Estou acordado por:ㅤㅤ<i class="fa fa-fw fa-terminal" aria-hidden="true"></i> Comandos:</h4>
+      <strong>ㅤㅤㅤㅤㅤ<%= stats.servers %></strong>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<strong><%= stats.uptime %></strong>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<strong><%= stats.commands %></strong>
+      
+      <p>ㅤ</p>
+    
+      <h4><i class="fa fa-fw fa-users" aria-hidden="true"></i> Usuários:ㅤㅤㅤㅤㅤ<i class="fa fa-fw fa-cog" aria-hidden="true"></i>Versão:ㅤㅤㅤㅤㅤ<i class="fa fa-fw fa-hashtag" aria-hidden="true"></i> Canais:</h4>
+      <strong>ㅤㅤㅤㅤ<%= stats.members %></strong>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<strong><%= stats.bVersion %></strong>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<strong><%= bot.channels.size%></strong>
+
+      </div>
+    </div>
+
+<br
+
+
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2><i class="fa fa-fw fa-github" aria-hidden="true"></i>Código Aberto</h2>
+          <p>Isso não (completo com o painel) é completamente <a href="">Open Source.</a></p>
+          <p><a class="btn btn-secondary" href="https://github.com/NdT3Development/DiscordBot" role="button"> GitHub  »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-fw fa-cogs" aria-hidden="true"></i> Dashboard!</h2>
+          <p>Yeah, agora o bot possue um DashBoard!</p>
+          <p><a class="btn btn-secondary" href="/login" role="button">Login »</a></p>
+        </div>
+       <div class="col-md-4">
+          <h2><a class="navbar-brand"><% if (bot.user.avatarURL) { %><img src="<%= bot.user.avatarURL %>" width="50" height="50" class="rounded-circle" alt=""><% } %></a>Support Server!</h2>
+          <p>Meu servidor de Suporte</p>
+          <p><a class="btn btn-secondary" href="https://discord.gg/GyAPE8G" role="button">Entrar »</a></p>
+        </div>
+      </div>
+ </div>
+
+<%- include ./blocks/footer %>
