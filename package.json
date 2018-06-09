@@ -42,8 +42,9 @@
     "sodium": "^2.0.3",
     "figlet": "^1.2.0",
     "twemoji": "^11.0.0",
-    "snekfetch": "^4.0.1",
-    "random-puppy": "^1.1.0"
+    "snekfetch": "^4.0.2",
+    "random-puppy": "^1.1.0",
+    "dblapi.js": "^2.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
