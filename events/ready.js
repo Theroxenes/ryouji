@@ -34,4 +34,12 @@ module.exports = async client => {
 
 	var game = client.config.playingGame.replace('{{prefix}}', client.config.defaultSettings.prefix).replace('{{guilds}}', gCount).replace('{{version}}', client.version);
 	client.user.setPresence({status: client.config.status, game: {name: game, type:0}});
+
+  const Discord = require("discord.js");
+  const DBL = require("dblapi.js");
+  const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ1MjU4NTIwNTk3NTM1MTI5NyIsImJvdCI6dHJ1ZSwiaWF0IjoxNTI4NTgyNzQxfQ.KwgNP7Nmr-yoAmLkP1XoRm5Hn4NDIOwBeSMiVu1kHjE', client);
+    setInterval(() => {
+        dbl.postStats(client.guilds.size, client.shards.id, client.shards.total);
+    }, 1800000);  
+
 };

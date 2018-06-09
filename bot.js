@@ -11,12 +11,6 @@ const ytdl = require('ytdl-core');
 
 const client = new Discord.Client();
 
-const { ShardingManager } = require('discord.js');
-const manager = new ShardingManager(`${__dirname}/bot.js`, {totalShards: 2});
-
-manager.spawn();
-manager.on('launch', shard => console.log(`Successfully launched shard ${shard.id} Ping: ${shard.ping}`));
-
 try {
 	client.config = require('./config.js');
 } catch (err) {
