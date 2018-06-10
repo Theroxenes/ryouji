@@ -1,5 +1,8 @@
 
 <%- include('blocks/header', {bot:bot, user: user, auth: auth}) %>
+  <title>
+    Dashboard - <%= bot.user.username %>
+  </title>
 <h1 class="display-3">Dashboard</h1>
 <ul class="list-unstyled">
 <% user.guilds.forEach(guild => {
