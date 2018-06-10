@@ -1,4 +1,9 @@
 <%- include('blocks/header', {bot: bot, user: user, auth: auth, stats: stats}) %>
+
+  <title>
+   Stats - <%= bot.user.username %>
+  </title>
+
 <% var borderedStats;
 if (bot.config.dashboard.borderedStats === "true") {
 	borderedStats = true;
