@@ -2,7 +2,7 @@
 
 This is my first Discord bot made using [Discord.js](https://github.com/hydrabolt/discord.js).
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0d36700c698e40f1b70b2b857c7fb5f4)](https://www.codacy.com/app/Gugui000/test-dash?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gugui000/test-dash&amp;utm_campaign=Badge_Grade)
+[![Discord Bots](https://discordbots.org/api/widget/452585205975351297.svg)](https://discordbots.org/bot/452585205975351297)
 
 ## It currently has these features:
   - Kicking users
