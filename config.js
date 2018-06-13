@@ -5,8 +5,8 @@ var Manutenção1 = 'dnd'
 var Manutenção2 = 'idle';
 var config = { // NOTE: DO NOT LEAVE ANYTHING BLANK
     // ALL settings are strings. Do NOT just use true or false, use these in strings such as 'true' or 'false'. This is due to how some code works when changing the settings
-    ownerID: '292065674338107393', // Seu ID Aqui
-    token: 'NDUyNTg1MjA1OTc1MzUxMjk3.DfSeWA.xem_HIDw9OfEUCt4Runkiocp-Uo', // Your bot token here
+    ownerID: 'OWNERID', // Seu ID Aqui
+    token: 'BOT_TOKEN', // Your bot token here
     status: Online, // Status do Bot [Manutenção, Online, Ocupado, Ausente]
     debug: 'false', // This is used to output some debug info if needed. The token will be in the console and other information could be in the console
     playingGame: '{{prefix}}help para Ajuda,  r!info para minhas informações.', // The game you want the bot to play. {{prefix}} is replaced with the default prefix below, {{guilds}} is replaced with the guild count and {{version}} is replaced with the bot version. Leave blank to disable
